@@ -11,5 +11,15 @@ If you skip all or some of the input fields, you will receive an error message.
 
 ![Запись экрана от 2024-10-12 20-50-14](https://github.com/user-attachments/assets/e89e8821-b654-4a3d-be9e-9b3613bdbede)
 ----------------------------------------------------------------------------------------
+If you want to run the project, you need to open the console and run these scripts:
+
+```
+npm i
+```
+
+```
+npm run dev
+```
+----------------------------------------------------------------------------------------
 # Figama link
 https://www.figma.com/design/ZXnXq8bcD7ACMneMdlXSKD/Untitled?node-id=3-58&t=Vqj6BBYlP7DOLMXG-1
