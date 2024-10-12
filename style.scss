@@ -1,0 +1,174 @@
+@mixin FlexElement($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin ForBlocks ($justify) {
+  display: flex;
+  justify-content: $justify;
+}
+
+body {
+  @include FlexElement(center, center);
+  column-gap: 30px;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(243deg, rgba(255, 0, 0, 0.33) 0%, rgba(255, 225, 0, 0.33) 99.75%), linear-gradient(117deg, #0F93FF 0.37%, #BF00FF 99.22%);
+}
+
+.Section1Block {
+  &_logoBlock {
+      @include FlexElement(center, center);
+      width: 351px;
+      height: 81px;
+      background: rgba(0, 0, 0, 0.50);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 10px;
+      &_logoElements {
+          display: flex;
+          column-gap: 15px;
+          &_logoTexts {
+              width: 257px;
+              height: 54px;
+              &_titleText {
+                  color: #FFF;
+                  font-family: "Overpass Mono";
+                  font-size: 23px;
+                  font-style: normal;
+                  font-weight: 400;
+              }
+              &_nameText {
+                  color: #FFF;
+                  font-family: "Overpass Mono";
+                  font-size: 35px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;     
+              }
+          }
+      }
+  }
+  &_sectionsBlock {
+      @include ForBlocks(center);
+      width: 351px;
+      height: 190px;
+      background: rgba(0, 0, 0, 0.50);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 10px;
+      margin-top: 11px;
+      &_sectionInputs {
+          margin-top: 20px;
+          width: 278px;
+          height: 120px;
+          &_keyInputBlock {
+              width: 278px;
+              height: 44px;
+              &_titleText {
+                  color: #FFF;
+                  font-family: "Overpass Mono";
+                  font-size: 15px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+              }
+              &_inputKey {
+                  width: 273px;
+                  height: 25px;
+                  border-radius: 2px;
+                  border: none;
+                  outline:none;
+                  font-family: "Overpass Mono";        
+              }
+          } 
+          &_valueInputBlock {
+              margin-top: 10px;
+              width: 278px;
+              height: 44px;
+              &_titleText {
+                  color: #FFF;
+                  font-family: "Overpass Mono";
+                  font-size: 15px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+              }
+              &_inputValue {
+                  width: 273px;
+                  height: 25px;
+                  border-radius: 2px;
+                  border: none;
+                  outline:none;
+                  font-family: "Overpass Mono";        
+              }
+          } 
+          &_buttonNew {
+              width: 276.5px;
+              height: 31px;           
+              border-radius: 2px;
+              background: #ffffff;
+              color: #000000;
+              font-family: "Overpass Mono";
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              border: none;
+              transition-duration: 0.6s;
+              cursor: pointer;
+              margin-top: 20px;
+              &:hover {
+                  background: #12A921;
+                  color: #ffffff;
+                  transition-duration: 0.6s;
+              }
+          }
+      }
+  }
+}
+
+.Section2Block {
+  @include FlexElement(center, center);
+  width: 465px;
+  height: 537px;
+  background: rgba(0, 0, 0, 0.50);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+  &_copyBlock {
+      @include FlexElement(center, center);
+      position: absolute;
+      top: 0;
+      width: 465px;
+      height: 45px;
+      background: rgba(0, 0, 0, 0.50);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 10px;
+      &_copyButton {
+          @include FlexElement(center, center);
+          display: flex;
+          width: 131px;
+          height: 24px;
+          color: #FFF;
+          font-family: "Overpass Mono";
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          background: none;
+          border: none;
+          cursor: pointer;
+      }
+  }
+  &_jsonBlock {
+      @include FlexElement(center, center);
+      width: 358px;
+      height: 175px;
+      background: rgba(0, 255, 0, 0.187);
+      color: #FFF;
+      font-family: "Overpass Mono";
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+  }
+}
