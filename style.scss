@@ -17,6 +17,14 @@ body {
   background: linear-gradient(243deg, rgba(255, 0, 0, 0.33) 0%, rgba(255, 225, 0, 0.33) 99.75%), linear-gradient(117deg, #0F93FF 0.37%, #BF00FF 99.22%);
 }
 
+.pnotify {
+    font-family: "Overpass Mono";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .Section1Block {
   &_logoBlock {
       @include FlexElement(center, center);
@@ -157,18 +165,27 @@ body {
           background: none;
           border: none;
           cursor: pointer;
+          &_svg {
+            fill: #ffffff;
+          }
       }
   }
   &_jsonBlock {
-      @include FlexElement(center, center);
-      width: 358px;
-      height: 175px;
-      background: rgba(0, 255, 0, 0.187);
-      color: #FFF;
-      font-family: "Overpass Mono";
-      font-size: 28px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+        width: 100%;
+        height: calc(100% - 45px); 
+        font-family: "Overpass Mono", monospace;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        color: #FFF;
+        background: transparent;
+        border-radius: 10px;
+        overflow: auto; 
+        white-space: pre-wrap; 
   }
 }

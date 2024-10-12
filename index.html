@@ -17,7 +17,7 @@
     <!--Overpass Mono font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <div class="Section1Block">
@@ -49,17 +49,17 @@
             <p class="Section1Block_sectionsBlock_sectionInputs_valueInputBlock_titleText">Value:</p>
             <input id="inputValue" class="Section1Block_sectionsBlock_sectionInputs_valueInputBlock_inputValue" type="text">
           </div>
-          <button id="buttonNewSection" class="Section1Block_sectionsBlock_sectionInputs_buttonNew">Create</button>
+          <button id="buttonCreate" class="Section1Block_sectionsBlock_sectionInputs_buttonNew">Create</button>
         </div>
       </div>
     </div>
     <div class="Section2Block">
       <div class="Section2Block_copyBlock">
-        <button class="Section2Block_copyBlock_copyButton">
+        <button id="copyJsonButton" class="Section2Block_copyBlock_copyButton">
           Copy JSON
-          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="25" viewBox="0 0 27 25" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.625 8.33334C23.625 6.60746 22.114 5.20834 20.25 5.20834H11.25C9.38604 5.20834 7.875 6.60746 7.875 8.33334V20.8333C7.875 22.5593 9.38604 23.9583 11.25 23.9583H20.25C22.114 23.9583 23.625 22.5593 23.625 20.8333V8.33334ZM21.375 8.33334C21.375 7.75805 20.8713 7.29168 20.25 7.29168H11.25C10.6287 7.29168 10.125 7.75805 10.125 8.33334V20.8333C10.125 21.4087 10.6287 21.875 11.25 21.875H20.25C20.8713 21.875 21.375 21.4087 21.375 20.8333V8.33334Z" fill="white"/>
-            <path d="M6.75 3.12499H18C18.6213 3.12499 19.125 2.65861 19.125 2.08332C19.125 1.50803 18.6213 1.04166 18 1.04166H6.75C4.88604 1.04166 3.375 2.44077 3.375 4.16666V18.75C3.375 19.3253 3.87868 19.7917 4.5 19.7917C5.12132 19.7917 5.625 19.3253 5.625 18.75V4.16666C5.625 3.59136 6.12868 3.12499 6.75 3.12499Z" fill="white"/>
+          <svg id="svg" class="Section2Block_copyBlock_copyButton_svg" xmlns="http://www.w3.org/2000/svg" width="27" height="25" viewBox="0 0 27 25" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.625 8.33334C23.625 6.60746 22.114 5.20834 20.25 5.20834H11.25C9.38604 5.20834 7.875 6.60746 7.875 8.33334V20.8333C7.875 22.5593 9.38604 23.9583 11.25 23.9583H20.25C22.114 23.9583 23.625 22.5593 23.625 20.8333V8.33334ZM21.375 8.33334C21.375 7.75805 20.8713 7.29168 20.25 7.29168H11.25C10.6287 7.29168 10.125 7.75805 10.125 8.33334V20.8333C10.125 21.4087 10.6287 21.875 11.25 21.875H20.25C20.8713 21.875 21.375 21.4087 21.375 20.8333V8.33334Z"/>
+            <path d="M6.75 3.12499H18C18.6213 3.12499 19.125 2.65861 19.125 2.08332C19.125 1.50803 18.6213 1.04166 18 1.04166H6.75C4.88604 1.04166 3.375 2.44077 3.375 4.16666V18.75C3.375 19.3253 3.87868 19.7917 4.5 19.7917C5.12132 19.7917 5.625 19.3253 5.625 18.75V4.16666C5.625 3.59136 6.12868 3.12499 6.75 3.12499Z"/>
           </svg>    
         </button>
       </div>
